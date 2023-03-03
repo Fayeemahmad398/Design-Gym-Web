@@ -1,0 +1,258 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url("gymImg.jpeg");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    color: white;
+}
+.container{
+    /* margin:0px 30px ; */
+    /* border: 1px solid rebeccapurple; */
+    
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed ;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* border:1px solid white; */
+
+}
+.img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+.img img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 10px !important;
+} 
+.middle-nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+    justify-content: space-between;
+    /* border:  1px solid red; */
+}
+.middle-nav a{
+    margin: 15px 8px ;
+    padding: 0px 5px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.middle-nav a:hover{
+    outline: 0.5px solid grey;
+}
+.right-nav{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* border:  1px solid red; */
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.right-nav button{
+    background-color: black;
+    /* border:  1px solid grey; */
+    margin: 0px 10px;
+    color: white;
+    border: 0.1px solid gray;
+    border-radius: 5px;
+}
+.right-nav button:hover{
+    outline: 0.4px solid grey ;
+
+}
+.body-part{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    /* margin-left: 30px; */
+    margin-top: 180px;
+    border:1px solid grey;
+    border-radius: 10px;
+    width: 40vw;
+    height: 60vh;
+
+}
+
+.body-part form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:10px;
+    align-items:center;
+
+}
+.body-part input{
+    width: 70%;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(203, 193, 193);
+    
+
+}
+.body-part .btn{
+    width:73% ;
+    background-color: black;
+    color: white;
+    outline: 1px solid rgb(60, 58, 58);
+    border-radius: 5px;
+
+}
+.body-part .btn:hover{
+    outline: 1px solid grey;
+}
+.body-part input:hover{
+    outline: 1px solid rgb(239, 216, 216);
+}
+
+
+
+@media (max-width:780px) {
+
+    /* for box  */
+    .body-part input{
+        font-size: 12px;
+    }
+    .body-part .btn{
+        font-size: 12px;
+    }
+    .body-part h3{
+        font-size: 17px;
+    }
+    .body-part{
+        height: 50vh;
+    }
+   
+    
+}
+@media (max-width:500px) {
+    .body-part input{
+        font-size: 10px;
+    }
+    .body-part .btn{
+        font-size: 10px;
+    }
+    .body-part h3{
+        font-size: 9px;
+    }
+    .body-part{
+        height: 40vh;
+    }
+}
+
+
+ /* This hover and  sibling target are here */
+.fa-bars{
+    display: none !important;
+}
+
+@media (max-width:780px) {
+
+        .right-nav{
+            padding-right: 75px;
+        }
+        .fa-bars{
+            position: fixed;
+            right: 15px !important;
+            top:30px ;
+            display: block !important;
+        }
+    
+        .middle-nav{
+            display: none !important;
+            /* visibility: hidden !important; */
+        }
+        .fa-bars:hover.fa-bars+.middle-nav{
+            border: 1px solid grey;
+            position: absolute;
+            display: flex !important;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap:20px;
+            right: -23px;
+            top:73px;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+     .middle-nav:hover{
+            display: none !important;
+            /* visibility: visible !important; */
+            
+        }
+} 
+
+
+
+@media (max-width:500px) {
+
+    .right-nav button{
+        margin: 2px;
+        border: 0.1px solid gray;
+        font-size: 14px;
+
+    }
+
+
+    .right-nav{
+        padding-right: 40px;
+    }
+    .fa-bars{
+        position: fixed;
+        right: 50px;
+        top:30px ;
+        display: block !important;
+    }
+
+    .middle-nav{
+        /* display: none !important; */
+        visibility: hidden !important;
+        
+    }
+    .fa-bars:hover.fa-bars+.middle-nav{
+        /* border: 1px solid red; */
+        position: absolute;
+        display: flex !important;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap:20px;
+        right: -23px;
+        top:50px;
+        justify-content: center;
+        align-items: center;
+        visibility: visible !important;
+        
+        
+    }
+    .middle-nav:hover{
+        /* display: block; */
+        visibility: visible !important;
+    }
+
+
+  
+    
+
+} 
+
+
